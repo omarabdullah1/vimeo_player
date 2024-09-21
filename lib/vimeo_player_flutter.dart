@@ -29,6 +29,11 @@ class _VimeoPlayerState extends State<VimeoPlayer> {
 
   @override
   void initState() {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.landscapeRight,
+      DeviceOrientation.landscapeLeft,
+  ]);
+
     _controller
       ..loadRequest(_videoPage(widget.videoId))
       ..setJavaScriptMode(JavaScriptMode.unrestricted);
