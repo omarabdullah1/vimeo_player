@@ -3,6 +3,7 @@ library vimeo_player_flutter;
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 ///vimeo player for Flutter apps
